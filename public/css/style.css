@@ -140,7 +140,7 @@ img {
   border-radius: var(--radius-8);
   color: var(--clr-mate);
   border: 2px solid var(--clr-neutral-light);
-  background: var(--clr-light-orange);
+  background-color: var(--clr-light-orange);
   z-index: 1000;
   animation: alert-animation 4s forwards;
 }
@@ -317,7 +317,7 @@ img {
   font-weight: 900;
   text-align: center;
   background: var(--clr-dark-gradient);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -474,7 +474,7 @@ img {
   font-weight: 900;
   font-size: 4vw;
   background: var(--clr-dark-gradient);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -639,7 +639,7 @@ img {
   font-weight: 900;
   padding: var(--space-unit);
   background: var(--clr-dark-gradient);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -779,7 +779,7 @@ video::media-controls {
   font-size: 5.4vw;
   color: var(--clr-mate);
   background: var(--clr-dark-gradient);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -931,7 +931,7 @@ video::media-controls {
   text-align: center;
   font-weight: 900;
   background: var(--clr-dark-gradient);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
