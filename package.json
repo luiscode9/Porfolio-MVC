@@ -16,6 +16,7 @@
     "cors": "^2.8.5",
     "ejs": "^3.1.10",
     "express": "^4.21.1",
+    "netlify-cli": "^17.37.0",
     "netlify-lambda": "^2.0.16",
     "nodemailer": "^6.9.15",
     "serverless-http": "^3.2.0"
