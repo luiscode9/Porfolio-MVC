@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "build": "netlify deploy --prod",
+    "start": "node functions/app.js",
+    "dev": "nodemon functions/app.js"
   },
   "keywords": [],
   "author": "",
