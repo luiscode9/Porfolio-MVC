@@ -123,6 +123,57 @@ img {
   display: block;
 }
 
+.toast-notification {
+  width: 14%;
+  position: fixed;
+  top: 130px;
+  right: var(--space-twounits);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: druktext;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  opacity: 0;
+  padding: 12px 0;
+  border-radius: var(--radius-8);
+  color: var(--clr-mate);
+  border: 2px solid var(--clr-neutral-light);
+  background: var(--clr-light-orange);
+  z-index: 1000;
+  animation: alert-animation 4s forwards;
+}
+
+@keyframes alert-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+    /* Inicia un poco más abajo */
+  }
+
+  10% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  80% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  90% {
+    opacity: 0.5;
+    /* Un poco de desvanecimiento antes de desaparecer */
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+    /* Se desplaza hacia abajo al desaparecer */
+  }
+}
+
 .main-container {
   width: 100%;
   min-height: 100vh;

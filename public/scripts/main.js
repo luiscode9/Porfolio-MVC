@@ -1,25 +1,3 @@
-/*----------------- ACCORDION SECTION ----------------*/
-
-document.addEventListener("DOMContentLoaded", function () {
-  const triggers = document.querySelectorAll(".exp-trigger");
-
-  triggers.forEach((trigger) => {
-    trigger.addEventListener("click", function () {
-      const content = this.nextElementSibling;
-
-      if (content.classList.contains("open")) {
-        content.classList.remove("open");
-        this.querySelector(".exp-down-arrow").style.display = "block";
-        this.querySelector(".exp-up-arrow").style.display = "none";
-      } else {
-        content.classList.add("open");
-        this.querySelector(".exp-down-arrow").style.display = "none";
-        this.querySelector(".exp-up-arrow").style.display = "block";
-      }
-    });
-  });
-});
-
 /*----------------- RESPONSIVE MENUMOBILE ----------------*/
 
 const openMenu = (toggleId, navId) => {
@@ -42,7 +20,29 @@ const openMenu = (toggleId, navId) => {
 
 openMenu("open-menu", "menu-mobile");
 
-/*----------------- HOVER VIDEO 1 AND 2----------------*/
+/*----------------- ACCORDION SECTION ----------------*/
+
+document.addEventListener("DOMContentLoaded", function () {
+  const triggers = document.querySelectorAll(".exp-trigger");
+
+  triggers.forEach((trigger) => {
+    trigger.addEventListener("click", function () {
+      const content = this.nextElementSibling;
+
+      if (content.classList.contains("open")) {
+        content.classList.remove("open");
+        this.querySelector(".exp-down-arrow").style.display = "block";
+        this.querySelector(".exp-up-arrow").style.display = "none";
+      } else {
+        content.classList.add("open");
+        this.querySelector(".exp-down-arrow").style.display = "none";
+        this.querySelector(".exp-up-arrow").style.display = "block";
+      }
+    });
+  });
+});
+
+/*----------------- HOVER VIDEO 1 AND 2 ----------------*/
 
 document.addEventListener("DOMContentLoaded", () => {
   const video = document.getElementById("video1");
@@ -69,3 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
     video.pause();
   });
 });
+
+
+
+
